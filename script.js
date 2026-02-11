@@ -11,6 +11,18 @@ function toggleMobile(){
   el.style.display = visible ? 'none' : 'block';
   btn.setAttribute('aria-expanded', String(!visible));
 }
+ 
+// Media Mobile 
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+  }
+}
+
 
 // Reveal on scroll animation
 const reveals = document.querySelectorAll('.reveal');
