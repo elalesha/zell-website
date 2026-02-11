@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Zell</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.style.display =
+            menu.style.display === "flex" ? "none" : "flex";
+    }
+</script>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Zell Website</div>
+
+        <div class="nav-right">
+            <a class="cta" href="index.html#contact">Customer Service</a>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+
+    </nav>
+
+    <main style="padding:40px;text-align:center;">
+        <h1>About Me</h1>
+        <p>Halo, saya Zell, seorang video editor yang fokus pada bidang Motion Graphics (Mograph), Typography Animation,
+            dan Thumbnail Design. Saya memiliki passion besar dalam dunia visual kreatif dan selalu berusaha
+            menghadirkan karya yang tidak hanya menarik secara estetika, tetapi juga kuat dalam menyampaikan pesan.</p>
+    </main>
+
+    <footer>
+        © 2026 Zell Website
+    </footer>
+
+</body>
+
+</html>
