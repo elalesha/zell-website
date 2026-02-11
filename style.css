@@ -129,7 +129,7 @@ nav{
 }
 
 /* RESPONSIVE */
-@media (max-width: 10000px) {
+@media (max-width: 100000px) {
 
   .hamburger {
     display: block;
@@ -259,4 +259,5 @@ footer{padding:28px;text-align:center;color:var(--muted);font-size:13px}
   opacity: 1;
   bottom: -42px; /* geser sedikit saat muncul */
 }
+
 
