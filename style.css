@@ -27,11 +27,34 @@ nav{
 .menu{display:flex;gap:18px}
 .menu a{color:var(--muted);text-decoration:none;font-weight:600}
 
-.cta{
+/*portofolio button */
+
+.portofolio{
   background:linear-gradient(90deg,var(--accent),#4f46e5);
   padding:10px 14px;
   border-radius:10px;
-  color:white;text-decoration:none;font-weight:700;
+  color:white;text-decoration:none;font-weight:500;
+  margin-top:0px; 
+}
+
+/* customer service button*/
+
+.customerservice{
+  background:linear-gradient(15deg,var(--accent),#5239b0);
+  padding:10px 14px;
+  border-radius:10px;
+  color:white;text-decoration:none;font-weight:500;
+  margin-top:0px; 
+}
+
+/* submit email button*/
+
+.submit{
+  background:linear-gradient(90deg,var(--accent),#4f46e5);
+  padding:10px 14px;
+  border-radius:10px;
+  color:white;text-decoration:none;font-weight:500;
+  margin-top:0px; 
 }
 
 .hero{
@@ -106,7 +129,7 @@ nav{
 }
 
 /* Customer Service */
-.cta {
+.cta {k
   background: linear-gradient(45deg, #7b5cff, #5f3bff);
   padding: 8px 16px;
   border-radius: 10px;
