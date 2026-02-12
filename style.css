@@ -129,7 +129,7 @@ nav{
 }
 
 /* Customer Service */
-.cta {k
+.customerservice {
   background: linear-gradient(45deg, #7b5cff, #5f3bff);
   padding: 8px 16px;
   border-radius: 10px;
@@ -282,3 +282,4 @@ footer{padding:28px;text-align:center;color:var(--muted);font-size:13px}
   opacity: 1;
   bottom: -42px; /* geser sedikit saat muncul */
 }
+
