@@ -25,13 +25,25 @@ function toggleMenu() {
 
 
 // Reveal on scroll animation
-const reveals = document.querySelectorAll('.reveal');
-const obs = new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{ 
-    if(e.isIntersecting) e.target.classList.add('visible');
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+  const windowHeight = window.innerHeight;
+
+  reveals.forEach(el => {
+    const elementTop = el.getBoundingClientRect().top;
+    const elementBottom = el.getBoundingClientRect().bottom;
+
+    if (elementTop < windowHeight - 100 && elementBottom > 0) {
+      el.classList.add("active");
+    } else {
+      el.classList.remove("active"); // ini bikin animasi balik lagi
+    }
   });
-},{threshold:.12});
-reveals.forEach(r=>obs.observe(r));
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
 
 // Auto-update footer year
 const year = document.getElementById("year");
